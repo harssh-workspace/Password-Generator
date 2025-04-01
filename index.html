@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="heading">
+            <h1>Password Generator</h1>
+        </div>
+
+        <div class="genpassfield">
+            <h1 id="newPass"></h1>
+            <div class="copys">
+                <i style="margin-right: 35px;" class="fa-solid fa-copy" id="copyBtn"></i>
+                <p id="copiedText"></p>
+            </div>
+
+        </div>
+
+        <div class="firstPart">
+            <p>How many characters do you want?</p>
+            <input style="background-color: rgb(40, 40, 230);" type="range" id="range" min="5" max="15">
+            <p id="rangeValue"></p>
+        </div>
+
+        <div class="secondPart">
+            <div class="checkbox-wrapper-48">
+                <label for="upperLetter"><input type="checkbox" name="upperLetter" id="upperLetter">
+                Uppercase</label>
+            </div>    
+            <br>
+            <div class="checkbox-wrapper-48">
+                <label for="lowerLetter"><input type="checkbox" name="lowerLetter" id="lowerLetter">
+                Lowercase</label>
+            </div>
+            <br>
+            <div class="checkbox-wrapper-48">
+                <label for="number"><input type="checkbox" name="number" id="number">
+                Number</label>
+            </div>
+            <br>
+            <div class="checkbox-wrapper-48">
+                <label for="specialChar"><input type="checkbox" name="specialChar" id="specialChar">
+                Special Character</label>
+            </div>
+        </div>
+
+        <div class="btn">
+            <button type="button" id="genPass">Generate Password</button>
+            <button type="button" id="genPass" onClick="window.location.reload();">Refresh Page</button>
+        </div>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
