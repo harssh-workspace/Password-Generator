@@ -134,3 +134,28 @@ body {
     border-color: transparent;
     background: linear-gradient(#fff, #fff) padding-box, var(--gradient) border-box;
 }
+
+/* Responsive Design  */
+
+@media(max-width:480px){
+    .container{
+        height: 500px;
+        width: 400px; 
+    }
+    .heading h1{
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+        font-size: x-large;
+    }
+    .genpassfield{
+        /* height: ; */
+        width: 85%;
+    }
+    .firstPart p{
+        font-size: medium;
+    }
+    .checkbox-wrapper-48 label {
+        /* margin-right: 5rem; */
+        font-size: 1em;
+    }
+}
