@@ -147,6 +147,9 @@ body {
         margin-bottom: 0.5rem;
         font-size: x-large;
     }
+    #newPass{
+        font-size: larger;
+    }
     .genpassfield{
         /* height: ; */
         width: 85%;
@@ -173,6 +176,9 @@ body {
     .genpassfield{
         /* height: ; */
         width: 80%;
+    }
+    #newPass{
+        font-size: medium;
     }
     .firstPart p{
         margin-top: 0.5rem;
